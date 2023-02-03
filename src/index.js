@@ -1,3 +1,3 @@
-import "./scss/global.scss"
+import "./scss/index.scss"
 import "jquery"
 import "bootstrap"
