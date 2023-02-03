@@ -9,7 +9,7 @@ module.exports = {
     mode: modoDev ? 'development' : 'production',
     entry: './src/index.js',
     devServer: {
-        static:  "./public",
+        static:  "./build",
         port: 5000,
     },
     optimization: {
@@ -23,7 +23,7 @@ module.exports = {
     },
     output: {
         filename: 'main.js',
-        path: __dirname + '/public'
+        path: __dirname + '/build'
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: 'style.css' }),

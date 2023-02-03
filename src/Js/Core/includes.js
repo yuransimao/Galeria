@@ -8,7 +8,7 @@ function Loadincludes (parent){
         const url = $(e).attr('wm-include')
         $.ajax({
             url,
-            succes(data){
+            success(data){
                 $(e).html(data)
                 $(e).removeAttr('wm-include')
                 Loadincludes(e)
