@@ -10,6 +10,7 @@ function Loadincludes (parent){
             url,
             success(data){
                 $(e).html(data)
+                console.log(e)
                 $(e).removeAttr('wm-include')
                 Loadincludes(e)
             }
