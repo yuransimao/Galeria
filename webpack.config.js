@@ -10,7 +10,7 @@ module.exports = {
     entry: './src/index.js',
     devServer: {
         static:  "./public",
-        port: 9000,
+        port: 5000,
     },
     optimization: {
         minimizer: [
