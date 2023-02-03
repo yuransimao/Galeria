@@ -16,7 +16,43 @@ module.exports ={
             new UglifyJsPlugin({
                 cache: true,
                 parallel:true
-            })
+            }),
+            new OptimizeCSSAssestPlugin({})
+        ]
+    },
+
+    output:{
+        filename:'./public/main.js',
+    },
+
+    Plugin:[
+        new MiniCssExtractPlugin({filename:'./public/style.css'}),
+
+        new copyWebpackPlugin ({
+           patterns:[
+            {context:'src/', from:'**/*.html'},
+            {context:'src/', from:'Imgs/**/*.'}
+           ] 
+        })
+    ],
+    module:{
+        reules:[
+           {
+            test:/\.s?[ac]ss$/,
+            use:[
+                MiniCssExtractPlugin.loader,
+                'sass-loader',
+                 'css-loader'
+            ]
+        },
+        {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: 'file-loader'
+        },
+        {
+            test: /.(ttf|otf|eot|svg|woff(2)?)$/,
+            use: 'file-loader'
+        } 
         ]
     }
 }
