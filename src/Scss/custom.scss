@@ -1,25 +1,29 @@
-*{
-    user-select:none;
-    box-sizing:border-box;
-    flex-wrap:wrap;
-    
+* {
+    user-select: none;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-body{
-    background:black;
+body {
+    background: black;
 }
 
-.wrapper-galery{
+.wrapper-galery {
+    display: flex;
+    justify-content: center;
+    height: 598px;
+    max-width: 100%;
+    gap: 20px;
 
-    display:flex;
-    height:598px;
-    max-width:100%;
-    gap:10px;
-    padding:4px;
+    .galery-img {
+        background: aqua;
+        height: 60%;
+        filter: opacity(25%);
+        zoom: normal;
 
-    .galery-img{
-        background:aqua;
-        height:60%;
-
+        &:hover {
+            filter: opacity(100%);
+            zoom: unset;
+        }
     }
 }
