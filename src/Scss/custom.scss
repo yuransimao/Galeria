@@ -6,7 +6,13 @@ body{
     background:black;
 }
 
-.primaryImg{
-    height:30rem;
+.wrapper-galery{
+    height:600px;
+    max-width:100%;
     background: white;
+
+    .galery-img{
+        background:blue;
+        width:100%;
+    }
 }
