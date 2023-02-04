@@ -1,5 +1,8 @@
 *{
     user-select:none;
+    box-sizing:border-box;
+    flex-wrap:wrap;
+    
 }
 
 body{
@@ -7,12 +10,16 @@ body{
 }
 
 .wrapper-galery{
-    height:600px;
+
+    display:flex;
+    height:598px;
     max-width:100%;
-    background: white;
+    gap:10px;
+    padding:4px;
 
     .galery-img{
-        background:blue;
-        width:100%;
+        background:aqua;
+        height:60%;
+
     }
 }
