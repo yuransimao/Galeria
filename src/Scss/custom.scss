@@ -22,10 +22,22 @@ body {
 
     .galery-img {
         background: aqua;
-        height: 60%;
         filter: opacity(25%);
         zoom: normal;
         border-radius: 5px;
+        height: 60%;
+        width: 100%;
+
+        .imgs{
+            position:relative;
+            left:-5%;
+
+            img{
+                border-radius: 5px;
+            }
+            
+
+        }
 
         .btn-groups {
             display: flex;
@@ -49,8 +61,7 @@ body {
             }
         }
         &:hover {
-            filter: opacity(100%);
-            
+            filter: opacity(90%);
 
             .btn-groups {
                 visibility: visible;
