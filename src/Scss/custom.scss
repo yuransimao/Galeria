@@ -2,6 +2,7 @@
     user-select: none;
     box-sizing: border-box;
     flex-wrap: wrap;
+    border:none;
 }
 
 body {
@@ -31,12 +32,23 @@ body {
             zoom: unset;
             
             .btn-group {
+                
                 display: flex;
                 flex-direction: column;
                 position: absolute;
                 top: 70%;
                 right: 5%;
+                
+                .btns{
+                    border-radius:50%;
+                    cursor:pointer;
+                    background:none;
+                    padding: 4px;
+                    
+                }
             }
         }
+
+
     }
 }
