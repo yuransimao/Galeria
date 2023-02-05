@@ -2,10 +2,11 @@
     user-select: none;
     box-sizing: border-box;
     flex-wrap: wrap;
-    border:none;
+    border: none;
     outline: none;
     background: none;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -32,32 +33,28 @@ body {
             position: absolute;
             top: 68%;
             right: 5%;
-            //visibility: hidden;
-            .bttns{
+            visibility: hidden;
+            z-index: 2;
+            .bttns {
                 background: $cyan;
                 clip-path: circle(48%);
-                cursor:pointer;
-                color:white;
+                cursor: pointer;
+                color: white;
                 height: 15%;
                 object-fit: cover;
                 padding: 4px;
-
-                .img-fluid{
-                    color:white;
+                .img-fluid {
+                    color: white;
                 }
-                
             }
-           
         }
         &:hover {
             filter: opacity(100%);
-            zoom: unset;
             
+
             .btn-groups {
                 visibility: visible;
             }
         }
-
-
     }
 }
