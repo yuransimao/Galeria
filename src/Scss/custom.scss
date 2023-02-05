@@ -69,10 +69,11 @@ body {
             }
         }
     }
+
     .slide-carrousel{
         display:none;
     }
-   .active .slide-carrousel{
+    .actives{
         display: flex;
         height: 100%;
         width: 100%;
@@ -92,5 +93,7 @@ body {
         .sub-slide{
             max-width: 80%;
         }
+    
     }
 }
+
