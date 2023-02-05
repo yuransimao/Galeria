@@ -14,14 +14,19 @@ function Calview (){
 
 
 function RemoveView(){
-    $('[wm-RemoveView]')
+    $('[wm-RemoveView]').each(
+
+        function(i, e){
+            $(this).on('click', function () {
+                $('[wm-bla]').removeClass('actives')
+            })
+        }
+    )
 }
 
 
 
-onloadSucessgaleyView(
-    Calview
- )
+onloadSucessgaleyView(Calview,RemoveView )
 
 
 

@@ -2,9 +2,10 @@ import $ from "jquery"
 
 const Onloadgalery = []
 
-export function onloadSucessgaleyView(Callbacks){
-    if(!Onloadgalery.includes(Callbacks)){
-        Onloadgalery.push(Callbacks)
+export function onloadSucessgaleyView(Calview,RemoveView ){
+    
+    if(!Onloadgalery.includes(Calview,RemoveView )){
+        Onloadgalery.push(Calview,RemoveView )
     }
 }
 
