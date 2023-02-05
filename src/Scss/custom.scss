@@ -61,13 +61,24 @@ body {
             }
         }
 
-        .slide-carrou
         &:hover {
             filter: opacity(90%);
 
             .btn-groups {
                 visibility: visible;
             }
+        }
+    }
+
+    .slide-carrousel{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.568);
+        .sub-slide{
+            max-width: 80%;
         }
     }
 }
