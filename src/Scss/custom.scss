@@ -69,14 +69,26 @@ body {
             }
         }
     }
-
     .slide-carrousel{
+        display:none;
+    }
+   .active .slide-carrousel{
+        display: flex;
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
-        z-index: 100;
+        z-index: 2000;
         background: rgba(0, 0, 0, 0.568);
+        
+        .icon-cross{
+            position: absolute;
+            top:5%;
+            right: 2%;
+            button{
+                cursor: pointer;
+            }
+        }
         .sub-slide{
             max-width: 80%;
         }
