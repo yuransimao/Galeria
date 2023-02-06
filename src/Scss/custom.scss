@@ -6,7 +6,7 @@
     outline: none;
     background: none;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    
 }
 
 body {
@@ -28,6 +28,7 @@ body {
         border-radius: 5px;
         height: 60%;
         width: 100%;
+        transition: all 0.3s ease-in-out;
 
         .imgs{
             position:relative;
@@ -135,23 +136,27 @@ body {
     .search-box{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         height: 40px;
-        background: $cyan;
+        background: transparent;
         border-radius:40px;
         position: fixed;
         top:15%;
+        left: 3%;
+        width: 0;
+        transition:.5s ;
 
 
         input{
             display: none;
             color:white;
-            width: 0;
+            width: 1%;
             line-height: 38px;
-            border-radius:40px;
             text-align: start;
             padding-left: 7px;
-            transition:  .4s ;
+            transition:.5s;
+            &::placeholder{
+                color: white;
+            }
         }
 
         .search-btn{           
@@ -159,10 +164,29 @@ body {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-        }
-        &:hover > input{
             display: flex;
-            width: 40%;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            cursor: pointer;
+           
         }
+        &:hover{
+            width: 17%;
+            background-color: $cyan;
+            
+        
+         input{
+            display: flex;
+            width: 82%;
+            
+            
+        }
+        .search-btn{
+            transform:translateX(190px);
+            background: white;
+            
+        }
+    }
     }
 
