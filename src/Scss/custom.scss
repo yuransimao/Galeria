@@ -20,9 +20,10 @@ body {
     max-width: 100%;
     gap: 20px;
 
+    
     .galery-img {
         background: aqua;
-        filter: opacity(25%);
+        filter: opacity(50%);
         zoom: normal;
         border-radius: 5px;
         height: 60%;
@@ -48,7 +49,7 @@ body {
             visibility: hidden;
             z-index: 2;
             .bttns {
-                background: $cyan;
+                
                 clip-path: circle(48%);
                 cursor: pointer;
                 color: white;
@@ -75,12 +76,13 @@ body {
     }
     .actives{
         display: flex;
+        align-items: center;
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
         z-index: 2000;
-        background: rgba(0, 0, 0, 0.568);
+        background: rgba(0, 0, 0, 0.712);
         
         .icon-cross{
             position: absolute;
@@ -91,6 +93,33 @@ body {
             }
         }
         .sub-slide{
+            position: relative;
+            left:10%;
+            max-width: 80%;
+        }
+    
+    }
+    .actives2{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2000;
+        background: rgba(0, 0, 0, 0.712);
+        
+        .icon-cross{
+            position: absolute;
+            top:5%;
+            right: 2%;
+            button{
+                cursor: pointer;
+            }
+        }
+        .sub-slide{
+            position: relative;
+            left:10%;
             max-width: 80%;
         }
     
